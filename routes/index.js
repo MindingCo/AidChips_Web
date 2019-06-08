@@ -10,7 +10,7 @@ router.get('/', function(req, res)
 });
 router.get('/app', function(req, res)
 {
-    res.download(path.join(__dirname, '../public/js/minder.js'));
+    res.download(path.join(__dirname, '../public/app/aidchips.apk'));
 });
 
 router.get('/s/*', function(req, res)
