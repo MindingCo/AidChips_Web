@@ -2,10 +2,15 @@
 html, body
 {
   background: url(/img/background.jpg) no-repeat right;
+  background-size: cover;
   height: 100vh;
 }
 * { margin: 0; padding: 0; font-family: 'Product Sans', sans-serif;}
-a { text-decoration: none; color: inherit }
+a { text-decoration: none; color: inherit; font-size: 4vmin; }
+h1 { font-size: 6vmin; }
+/*@media only screen and (min-width: 520px) { a { font-size: 35px; } .icon-before { width: 35px !important; } }*/
+/*@media only screen and (min-width: 850px) { a { font-size: 20px; } .icon-before { width: 20px !important; } }*/
+/*@media only screen and (min-width: 1200px){ a { font-size: 15px; } .icon-before { width: 15px !important; } }*/
 /*    structure             */
 #introduction, #content { position: absolute; }
 #introduction { z-index: 1; max-height: 100vh; color: white}
@@ -23,7 +28,7 @@ a { text-decoration: none; color: inherit }
 .close { padding: 1em; height: 1em; }
 .close-btn {}
 .logo_big { max-height: 10em }
-.icon-before { padding-right: 10px; vertical-align: middle; width: 25px;}
+.icon-before { padding-right: 10px; vertical-align: middle; width: 4vmin; }
 .card
 {
   display: inline-block;
@@ -49,14 +54,14 @@ input[type="button"], .btn
   color: #222;
   cursor: pointer;
   fill: #222;
-  font-size: large;
+  font-size: 4vmin;
   font-weight: bold;
   padding: 3% 5%;
   /*box-shadow: rgba(0,0,0,.3) 5px 5px 10px*/
 }
 input[type="button"]:hover, .btn:hover { background-color: #222; color: snow; fill: snow; }
 
-#qr, #qr svg { height: 220px !important; width: 220px !important; }
+#qr, #qr svg { height: 50vmin !important; width: 50vmin !important; }
 #qr rect { fill: #EEE }
 #qr path { fill: #222 }
 
@@ -126,7 +131,7 @@ input[type="button"]:hover, .btn:hover { background-color: #222; color: snow; fi
 
 .inline { display: inline; }
 
-.max-width_20em { max-width: 20em; }
+.max-width_20em { max-width: 30vmax; }
 .text-block { text-align: justify; }
 .content-center { text-align: center; }
 .black-3 { background-color: rgba(0,0,0, 0.75)}
